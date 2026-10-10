@@ -11,15 +11,29 @@
   html { background: #fff; }
   body {
     margin: 0;
-    padding: 2rem 1.5rem 4rem;
+    padding: 0 0 4rem;
     background: #fff;
     color: #1c1c3c;
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.05rem;
     line-height: 1.9;
   }
-  main { max-width: 42rem; margin: 0 auto; }
-  .logo { display: block; width: min(100%, 340px); height: auto; margin: 0 0 3rem -0.6rem; }
+  header { padding: 2rem 1.5rem 1.5rem; }
+  .logo { display: block; width: min(100%, 340px); height: auto; margin: 0 0 0 -0.6rem; }
+
+  /* The painting: shown whole, never cropped, tinted or overlaid */
+  .hero { margin: 0; }
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 88vh;
+    max-height: 88svh;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  main { max-width: 42rem; margin: 0 auto; padding: 3.5rem 1.5rem 0; }
   h1 {
     font-size: clamp(2.2rem, 8vw, 3.4rem);
     font-weight: 400;
@@ -40,9 +54,15 @@
 </style>
 </head>
 <body>
-<main>
+<header>
   <img class="logo" src="logo.png" width="800" height="233" alt="leanne m christie — be a collector">
+</header>
 
+<figure class="hero">
+  <img src="Edging_East.jpg" alt="Edging East, an oil painting by Leanne M Christie">
+</figure>
+
+<main>
   <h1>SITE UPDATE</h1>
 
   <p>Leanne M Christie&rsquo;s website is being modernized.</p>
